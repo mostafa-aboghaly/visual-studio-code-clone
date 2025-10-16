@@ -1,0 +1,28 @@
+export const extensionIconPaths: Record<string, string> = {
+  // ** Files
+  tsx: "/icons/react_ts",
+  js: "/icons/javascript",
+  jsx: "/icons/react",
+  html: "/icons/html",
+  css: "/icons/css",
+  json: "/icons/json",
+  md: "/icons/markdown",
+  lock: "/icons/yarn",
+  svg: "/icons/svg",
+  txt: "/icons/file",
+  gitignore: "/icons/git",
+  eslintignore: "/icons/eslint",
+  eslintrc: "/icons/eslint",
+  png: "/icons/image",
+  ts: "/icons/typescript",
+  // ** Folders
+  node_modules: "/icons/folder-node",
+  public: "/icons/folder-public",
+  components: "/icons/folder-components",
+  src: "/icons/folder-src",
+  interface: "/icons/folder-interface",
+  utils: "/icons/folder-utils",
+  constant: "/icons/folder-constant",
+  data: "/icons/folder-database",
+  database: "/icons/folder-database",
+};
