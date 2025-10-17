@@ -62,7 +62,10 @@ const OpenedFilesBar = () => {
         className="flex items-end dark:bg-[#181818] bg-[#f8f8f8] h-[55px]"
         onContextMenu={(event) => {
           event.preventDefault();
-          setPosition({ x: event.clientX, y: event.clientY });
+          const widthAvailable = window.innerWidth - event.clientX;
+          if (widthAvailable < 210) {
+            setPosition({ x: event.clientX - 210, y: event.clientY });
+          } else setPosition({ x: event.clientX, y: event.clientY });
           setShowMenu(true);
         }}
       >
