@@ -1,5 +1,7 @@
 #  Visual Studio Code Clone
 
+![preview](./assets/preview.jpg)
+
 A visual clone of **Visual Studio Code** built with **React**, **Redux**, **Tailwind CSS**, and **TypeScript**.  
 It recreates the familiar layout and behavior of VS Code directly in the browser.
 
