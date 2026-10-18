@@ -21,8 +21,15 @@ const RenderedFileIcon = ({ filename, isFolder, isOpen }: IProps) => {
     return <IconImage src={iconPath} />;
   }
   if (isFolder && isOpen)
-    return <IconImage src="/icons/folder-default-open.svg" />;
-  if (isFolder && !isOpen) return <IconImage src="/icons/folder-default.svg" />;
+    return (
+      <IconImage
+        src={`${import.meta.env.BASE_URL}icons/folder-default-open.svg`}
+      />
+    );
+  if (isFolder && !isOpen)
+    return (
+      <IconImage src={`${import.meta.env.BASE_URL}icons/folder-default.svg`} />
+    );
   return <File />;
 };
 
